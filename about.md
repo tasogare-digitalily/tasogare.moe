@@ -1,6 +1,6 @@
 ---
 layout: tasogare-theme
-title: About
+title: about
 permalink: /about/
 ---
 

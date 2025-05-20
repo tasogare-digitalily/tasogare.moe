@@ -1,7 +1,7 @@
 - name: home
   link: /
-- name: page 1
-  link: /page1
+- name: blog
+  link: /blog
 - name: page 2
   link: /page2
 - name: page 3
