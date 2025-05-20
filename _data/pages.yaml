@@ -1,21 +1,23 @@
-- name: Home
+- name: home
   link: /
-- name: Page 1
+- name: page 1
   link: /page1
-- name: Page 2
+- name: page 2
   link: /page2
-- name: Page 3
+- name: page 3
   link: /page3
-- name: Submenu
+- name: submenu
   link: 
   subitems:
-    - name: Page A
+    - name: page A
       link: /page-a
-    - name: Page B
+    - name: page B
       link: /page-b
-    - name: Page C
+    - name: page C
       link: /page-c
-    - name: Page D
+    - name: page D
       link: /page-d
-    - name: Page E
+    - name: page E
       link: /page-e
+- name: about
+  link: /about

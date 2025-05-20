@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: tasogare-theme
 title: About
 permalink: /about/
 ---
