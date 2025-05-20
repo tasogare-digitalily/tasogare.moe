@@ -19,7 +19,7 @@
               {% else %}
                 <li>
                   {% assign htmlRemoved = page.url | remove: ".html" %}
-                  <a href="{{ item.link }}" {% if htmlRemoved == item.link %}style="color: red;"{% endif %}>
+                  <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
                     {{ item.name }}
                   </a>
                 </li>
