@@ -1,5 +1,9 @@
 <footer>
-    <div>tasogare ~ caprine musings & experiments</div>
-    <div><a href="https://www.facebook.com/your-facebook-username" title="Facebook"><i class="simple-icons--bluesky"></i></a></div>
+    <div>{{ site.title }}</div>
+    <div>
+        {% for item in site.data.socials %}
+            <a href="{{ item.link }}" title="{{ item.title }} "><i class="{{ item.icon-css-class }}"></i></a>
+        {% endfor %}
+    </div>
 </footer>
   

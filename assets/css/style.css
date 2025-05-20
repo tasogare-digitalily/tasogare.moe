@@ -214,6 +214,11 @@ footer {
   font-size: 0.75em;
   padding: 15px;
   background: var(--content-background-color);
+  display: grid;
+  justify-content: center;
+}
+
+footer div {
   display: flex;
   justify-content: center;
 }

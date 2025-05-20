@@ -1,0 +1,6 @@
+- title: Bluesky
+  link: https://bsky.app/profile/tasogare-umi.bsky.social
+  icon-css-class: simple-icons--bluesky
+- title: Github
+  link: https://github.com/tasogare-digitalily
+  icon-css-class: simple-icons--github
