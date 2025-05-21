@@ -89,8 +89,14 @@ a:focus {
 .layout {
   width: 1000px;
   display: grid;
-  grid-gap: var(--margin);
-  grid-template: "header header" auto "leftSidebar main" auto "footer footer" auto / var(--sidebar-width) auto;
+  /* commented out in favor of explicit layout below. . represents empty areas  */
+  /* grid-gap: var(--margin); */
+  grid-template: "header      header      header"         auto 
+                 ".           .           ."              var(--margin)
+                 "leftSidebar .           horiz-navbar"   auto
+                 "leftSidebar .           main"           auto
+                 ".           .           ."              var(--margin)
+                 "footer      footer      footer"         auto / var(--sidebar-width) var(--margin) auto;
   /* Confused by the grid? Check out my tutorial: https://petrapixel.neocities.org/coding/positioning-tutorial#grid */
 }
 
@@ -100,6 +106,8 @@ main {
   padding: var(--padding);
   background: var(--content-background-color);
   border: var(--border);
+  border-left: var(--border);
+  border-right: var(--border);
   border-radius: var(--round-borders);
 }
 
@@ -280,33 +288,84 @@ nav ul ul li > a {
   padding-left: 30px;
 }
 
-/* NAVIGATION IN HEADER */
 
-header nav {
+/* -------------------------------------------------------- */
+/* HORIZONTAL NAVBAR */
+/* -------------------------------------------------------- */
+/* NAVIGATION IN horiz-navbar */
+
+
+.horiz-navbar {
+  grid-area: horiz-navbar;
+  font-size: 1.2em;
+  padding-left: 12px;
+  padding-right: 12px;
+  /* border-top: var(--border);
+  border-left: var(--border);
+  border-right: var(--border);
+  border-radius: var(--round-borders) var(--round-borders) 0px 0px; */
+  /* background: var(--content-background-color); */
+}
+
+.horiz-navbar a{
+  border-top: var(--border);
+  border-left: var(--border);
+  border-right: var(--border);
+  border-radius: var(--round-borders) var(--round-borders) 0px 0px;
+  background:  #6a94a38c;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 75px;
+  /* margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  margin-right: 5px; */
+  color: #e8e3fd;
+  position: relative;
+  text-align: center;
+
+}
+
+.horiz-navbar li a{
+    color: #e8e3fd;
+
+}
+
+.horiz-navbar a:hover{
+  background:  #6a94a3;
+}
+
+
+
+
+.horiz-navbar nav {
   margin-bottom: 0;
 }
 
-header nav ul {
+.horiz-navbar nav ul {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
 }
 
-header nav ul li {
+.horiz-navbar nav ul li {
   position: relative;
 }
 
-header nav ul li:first-child > a {
+/* .horiz-navbar nav ul li:first-child > a {
   padding-left: 0;
 }
 
-header nav ul li:last-child > a {
+.horiz-navbar nav ul li:last-child > a {
   padding-right: 0;
-}
+} */
 
 /* Subnavigation (Drop-Down): */
 
-header nav ul ul {
+.horiz-navbar nav ul ul {
   background: var(--content-background-color);
   display: none;
   position: absolute;
@@ -319,18 +378,18 @@ header nav ul ul {
   box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
 }
 
-header nav ul li:hover ul,
-header nav ul li:focus-within ul {
+.horiz-navbar nav ul li:hover ul,
+.horiz-navbar nav ul li:focus-within ul {
   display: block;
 }
 
-header nav ul li strong {
+.horiz-navbar nav ul li strong {
   color: var(--link-color);
   text-decoration: underline;
   font-weight: normal;
 }
 
-header nav ul ul li a {
+.horiz-navbar nav ul ul li a {
   display: block;
   padding-left: 0;
   padding-right: 0;

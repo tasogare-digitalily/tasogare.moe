@@ -1,33 +1,6 @@
     <header>
 
         <div class="header-content">
-	        <div class="header-title">{{ site.title }}</div>
-	        
-	        <!-- NAVIGATION -->
-	        <nav>
-            <ul>
-            {% for item in site.data.pages %}
-              {% if item.subitems.size > 0 %}
-                <li>
-                  <strong>{{ item.name }}</strong>
-                  <ul>
-                    {% for subitem in item.subitems %}
-                      <li><a href="{{ subitem.link }}">{{ subitem.name }}</a></li>
-                    {% endfor %}
-                  </ul>
-                </li>
-              {% else %}
-                <li>
-                  <!-- special case for root/home selection, otherwise just use contains; posts will highlight blog section -->
-                  <a href="{{ item.link }}" {% if (page.url contains item.link and item.link != "/") or (page.url == item.link) %}style="color: red;"{% endif %}>
-                    {{ item.name }}
-                  </a>
-                </li>
-              {% endif % }
-            {% endfor %}
-            {% endfor %}
-            </ul>
-	        </nav>
-        	
+          <div class="header-title">{{ site.title }}</div>
         </div>
       </header>
