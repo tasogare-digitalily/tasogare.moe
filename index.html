@@ -8,8 +8,28 @@ title: tasogare
         
 <div>
   <section>
+    <h1></h1>
 
-    <h1>Page Title (Heading 1)</h1>
+    <h1>recent posts...</h1>
+    <ul>
+      {% for post in site.posts %}
+          {% if forloop.index == 1 %}
+            <h2><a href="{{ post.url | remove: ".html" }}">{{ post.title }}</a></h2>
+            <p>{{ post.date | date_to_string }} - {{ post.author }}</p>
+            {{ post.content }}
+          {% elsif forloop. index < 3 %}
+           <li>
+              <h2><a href="{{ post.url | remove: ".html" }}">{{ post.title }}</a></h2>
+                {{ post.excerpt }}
+                ...
+            </li>
+
+          {% endif %}
+          <hr /> <!-- hr = horizontal rule -->
+      {% endfor %}
+    </ul>
+
+
     <p>This layout was generated with <a href="https://petrapixel.neocities.org/" target="_blank">petrapixel</a>'s layout generator. You may remove the credit in the footer, but please leave the credit in the code. Thank you!</p>
     <p>
       I will now show you how to use the most common HTML text elements:

@@ -4,6 +4,7 @@ title:  "inaugural post"
 date:   2025-05-20 15:09:47 -0500
 author: digitalily
 categories: blog
+url: inaugural-post
 ---
 
 If you have somehow found yourself here, welcome!

@@ -2,22 +2,22 @@
   link: /
 - name: blog
   link: /blog
-- name: page 2
-  link: /page2
-- name: page 3
-  link: /page3
-- name: submenu
-  link: 
-  subitems:
-    - name: page A
-      link: /page-a
-    - name: page B
-      link: /page-b
-    - name: page C
-      link: /page-c
-    - name: page D
-      link: /page-d
-    - name: page E
-      link: /page-e
+# - name: page 2
+#   link: /page2
+# - name: page 3
+#   link: /page3
+# - name: submenu
+#   link: 
+#   subitems:
+#     - name: page A
+#       link: /page-a
+#     - name: page B
+#       link: /page-b
+#     - name: page C
+#       link: /page-c
+#     - name: page D
+#       link: /page-d
+#     - name: page E
+#       link: /page-e
 - name: about
   link: /about
