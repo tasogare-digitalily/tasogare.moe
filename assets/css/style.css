@@ -241,6 +241,12 @@ footer a:focus {
   color: var(--link-color-hover);
 }
 
+
+
+.footer-hover i:hover {
+  background-color: #e8e3fd;
+}
+
 /* -------------------------------------------------------- */
 /* NAVIGATION */
 /* -------------------------------------------------------- */
