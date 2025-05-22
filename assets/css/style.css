@@ -93,7 +93,7 @@ a:focus {
   /* grid-gap: var(--margin); */
   grid-template: "header      header      header"         auto 
                  ".           .           ."              var(--margin)
-                 "leftSidebar .           horiz-navbar"   auto
+                 "leftSidebar .           horiz-navbar"   35px
                  "leftSidebar .           main"           auto
                  ".           .           ."              var(--margin)
                  "footer      footer      footer"         auto / var(--sidebar-width) var(--margin) auto;
