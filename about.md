@@ -13,7 +13,7 @@ permalink: /about/
     <p>
         Hello!
         <br>
-        Welcome to tasogare.moe, my little corner of the internet. This sire is an attempt at collecting and displaying my various interests, hobbies, and even sometimes writing about them and the related processes, but for real this time.
+        Welcome to tasogare.moe, my little corner of the internet. This site is an attempt at collecting and displaying my various interests, hobbies, and even sometimes writing about them and the related processes, but for real this time.
         There won't really be consistency or a theme, but I'm not really setting out with one in mind anyway. Also, professionally I am a software developer (surprise surprise).
         <br>
         <br>
