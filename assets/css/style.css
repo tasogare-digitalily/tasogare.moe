@@ -8,8 +8,8 @@
 :root {
   /* Background Colors: */
   --background-color: #3a2d40ff;
-  --content-background-color: #000000;
-  --sidebar-background-color: #000000;
+  --content-background-color: #171616;
+  --sidebar-background-color: #171616;
 
   /* Text Colors: */
   --text-color: #e8e3fd;
@@ -18,9 +18,9 @@
   --link-color-hover: #9e48ec;
 
   /* Text: */
-  --font: Georgia, serif;
+  --font: "pixel-j", sans-serif;
   --heading-font: Georgia, serif;
-  --font-size: 14px;
+  --font-size: 12px;
 
   /* Other Settings: */
   --margin: 36px;
@@ -28,6 +28,14 @@
   --border: 5px solid #6a94a3;
   --round-borders: 10px;
   --sidebar-width: 300px;
+}
+
+@font-face {
+	font-family: "pixel-j";
+  /* https://github.com/hunterbridges/PDFontConvert/tree/master/ttf
+     http://jikasei.me/font/jf-dotfont/
+  */
+	src: url("/assets/fonts/JF-Dot-k12x10.ttf");
 }
 
 /* -------------------------------------------------------- */
@@ -93,7 +101,7 @@ a:focus {
   /* grid-gap: var(--margin); */
   grid-template: "header      header      header"         auto 
                  ".           .           ."              var(--margin)
-                 "leftSidebar .           horiz-navbar"   35px
+                 "leftSidebar .           horiz-navbar"   32px
                  "leftSidebar .           main"           auto
                  ".           .           ."              var(--margin)
                  "footer      footer      footer"         auto / var(--sidebar-width) var(--margin) auto;
