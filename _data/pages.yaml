@@ -2,6 +2,11 @@
   link: /
 - name: blog
   link: /blog
+- name: lists
+  link: /lists
+  subitems:
+    - name: songs
+      link: /lists/songs
 # - name: page 2
 #   link: /page2
 # - name: page 3

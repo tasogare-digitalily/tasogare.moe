@@ -1,0 +1,17 @@
+---
+layout: tasogare-theme
+title: songs
+permalink: /lists/songs/
+---
+here's a collection of songs I've listened too too many times on repeat, links to youtube (in a new tab)
+<br>
+<br>
+<ul>
+  {% for song in site.data.songs %}
+    <li>
+      <a href={{song.youtubeUrl}} target="_blank">{{ song.name }}</a> <br>
+      <i>{{ song.artist }}</i>
+    </li>
+    <br>
+  {% endfor %}
+</ul>

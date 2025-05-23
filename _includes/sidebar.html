@@ -1,14 +1,39 @@
 
       <aside class="left-sidebar">
-	  
-        
         <div class="sidebar-section">
-          <div class="sidebar-title">Section Title</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <p>Necessit atibus perferendis inventore tempore vel optio similique blanditiis quasi quam?</p>
+          <div class="sidebar-title">current</div>
+            <div>
+              games:
+              <ul>
+                <li>
+                  Clair Obscur: Expedition 33
+                </li>
+                <li>
+                  Touhou Mystia's Izakaya
+                </li>
+              </ul>
+            </div>
+             <div>
+              projects:
+              <ul>
+                <li>
+                  website making
+                </li>
+              </ul>
+            </div>
         </div>
-        
+
+        <hr />
+
         <div class="sidebar-section">
+          <div class="sidebar-title">song of the week</div>
+            <div>
+              {% assign song = site.data.songs | first %}
+              <iframe style="border-radius:12px" src= {{ song.spotifyUrl }} width="100%" height="80" frameBorder="0" allowfullscreen="" allow="clipboard-write; encrypted-media; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+       
+        <!-- <div class="sidebar-section">
           <div class="sidebar-title">Section Title</div>
           <blockquote>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -24,28 +49,27 @@
             <li><a href="/">List</a></li>
             <li>List</li>
           </ul>
-        </div>
+        </div> -->
         
         <div class="sidebar-section">
-          <div class="sidebar-title">Section Title</div>
-          <marquee>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
+          <div class="sidebar-title">link buttons</div>
+          <marquee scrollamount="2">
+            {% for item in site.data.link-buttons %}
+          	  <a href={{ item.url }} target="_blank"><img src={{ item.src }} alt={{ item.alt }}></a>
+            {% endfor %}
           </marquee>
         </div>
         
-        <div class="sidebar-section">
+        <!-- <div class="sidebar-section">
           <div class="sidebar-title">Section Title</div>
           <img class="full-width-image" src="https://picsum.photos/id/14/1000/400">
-        </div>
+        </div> -->
         
         <div class="sidebar-section">
-          <div class="sidebar-title">Section Title</div>
+          <div class="sidebar-title">link back</div>
           <div class="site-button">
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-        	<textarea><a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a></textarea>
+          	<a href="https://tasogare.moe/" target="_blank"><img src="/assets/images/tasogare-button.gif" alt="tasogare.moe"></a>
+        	<textarea><a href="https://tasogare.moe/" target="_blank"><img src="https://raw.githubusercontent.com/tasogare-digitalily/tasogare.moe/refs/heads/main/assets/images/tasogare-button.gif" alt="tasogare.moe"></a></textarea>
           </div>
         </div>
       </aside>

@@ -2,8 +2,11 @@
     <!-- <div>{{ site.title }}</div> -->
     <div>
         {% for item in site.data.socials %}
-            <a class="footer-hover" href="{{ item.link }}" title="{{ item.title }} "><i class="{{ item.icon-css-class }}"></i></a>
+            <a class="footer-hover" href="{{ item.link }}" target="_blank" title="{{ item.title }} "><i class="{{ item.icon-css-class }}"></i></a>
         {% endfor %}
+    </div>
+    <div>
+        by: digitalily
     </div>
 </footer>
   

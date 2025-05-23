@@ -3,17 +3,19 @@
         <ul>
         {% for item in site.data.pages %}
         {% if item.subitems.size > 0 %}
-            <li class="toplevel" {% if page.url contains item.link and item.link != "/" or page.url == item.link %}style="background: #6a94a3; border-top: 5px solid #6a94a3; border-left: 5px solid #6a94a3; border-right: 5px solid #6a94a3;"{% endif %}>
-            <strong>{{ item.name }}</strong>
-            <ul>
-                {% for subitem in item.subitems %}
-                <li><a href="{{ subitem.link }}">{{ subitem.name }}</a></li>
-                {% endfor %}
-            </ul>
-            </li>
+            <div {% if page.url contains item.link and item.link != "/" or page.url == item.link %}class="horiz-navbar-selected"{% else %} class="horiz-navbar-unselected" {% endif %}>
+                <li>
+                    {{ item.name }}
+                    <ul>
+                        {% for subitem in item.subitems %}
+                            <li><a href="{{ subitem.link }}" {% if page.url contains subitem.link and subitem.link != "/" or page.url == subitem.link %}class="horiz-navbar-sub-selected"{% else %} class="horiz-navbar-sub-unselected" {% endif %}>{{ subitem.name }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            </div>
         {% else %}
             <!-- special case for root/home selection, otherwise just use contains; posts will highlight blog section -->
-            <a href="{{ item.link }}" class="toplevel" {% if page.url contains item.link and item.link != "/" or page.url == item.link %}style="background: #6a94a3; border-top: 5px solid #6a94a3; border-left: 5px solid #6a94a3; border-right: 5px solid #6a94a3;"{% endif %}>
+            <a href="{{ item.link }}" {% if page.url contains item.link and item.link != "/" or page.url == item.link %}class="horiz-navbar-selected"{% else %} class="horiz-navbar-unselected" {% endif %}>
                 <li>
                     {{ item.name }}
                 </li>
