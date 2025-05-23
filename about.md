@@ -17,7 +17,7 @@ permalink: /about/
         There won't really be consistency or a theme, but I'm not really setting out with one in mind anyway. Also, professionally I am a software developer (surprise surprise).
         <br>
         <br>
-        The original <i>original</i> intention for this website (not to be confused with what it actually existed most of the time up til now as) was something else entirely, which makes it sound more grandiose than it actually was. In reality, it was more,  <i>dang I want that domain- buy it- uhhhhhh sure I have an -idea-</i>.
+        The original <i>original</i> intention for this website (not to be confused with what it actually existed most of the time up til now as) was something else entirely, which makes it sound more grandiose than it actually was. In reality, it was more a realization that I could own a domain name, finding and then buying one I liked, making some vague esoteric notes, and then letting it sit for a couple years.
         <br>
         <br>
         The specific impetus for this revival was wanting something <abbr title="read: at all">a bit fancier</abbr> for some cosplay work I was going to do, but that didn't materialize in time for that specific event so I started getting to work immediately afterwards, as you do. As mentioned in the inaugural post as well, I'd happened across several retro styled websites recently and figured I may as well give that a shot if I'm going to sit down and do something. Certainly helped prime me to begin messing with my hosting provider &#x1F60E;. 
