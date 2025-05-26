@@ -64,6 +64,10 @@ What we didn't realize (or at least, what I certainly didn't fully grasp) at the
 
 Well wrong, I suppose, but I know also that I shouldn't be <i>too</i> full of myself here- I am decidedly an amateur! The project as a whole is riddled with 'eh, good enough!' decisions. In the after meeting on Sunday, I learned more about what's expected from higher level competitors- a thorough documentation of how their cosplays are made, challenges overcome, and innovations to make it over the finish line. I haven't touched a needle and thread in my life, for one, and the non-coffin parts were by and large bought and only lightly modified- patches sewn on, by a friend- hemming of chaps, by a local business- perscription glasses I mangled with kiss-mark laden sunglass cutout, courtesy of Pearle Vision. There's a long way to go in the world of cosplay, but I can say for certain after non-chalantly entering the Hall cosplay contest and being recognized, I'm more eager to learn more and refine my craft than ever. 
 
+
+A pair of friends I was with also won an award on that Saturday, which made the whole thing even cooler. Thank goodness they did too- moral support while not quite sure what the Masquerade entailed was much needed.
+
+
 All in all, ACEN was a rousing success, and I had a bunch of lovely interactions with other con-goers on the floor, asking for photos or otherwise complimenting the cosplay. One question I got a couple times was if I would be at Combo Breaker, which was taking place the following weekend. My response was more or less 'No, no, ACEN is my con of the year so that'll be that,' but in the aftermath of the con, receiving an award, I asked around to some friends if they thought it was worth entering the Combo Breaker cosplay contest, and ultimately pulled the trigger.
 
 <hr class="small-hr" />
