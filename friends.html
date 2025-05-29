@@ -1,0 +1,36 @@
+---
+layout: tasogare-theme
+title: friends
+permalink: /friends/
+---
+Some friends who deserve shouts & follows!
+<br>
+<br>
+<br>
+<ul>
+  {% for friend in site.data.friends %}
+  <div>
+    <div style="display: inline-block; padding-right: 20px;">
+      <img src={{ friend.image }} width="100" height="100">
+      <div></div>
+    </div>
+    <div style="display: inline-block; text-align: left;">
+       <strong style="color: #e8e3fd;">{{friend.name}}
+      </strong><br>
+      {% if friend.bluesky %}<a href={{friend.bluesky}} target="_blank"><i class="simple-icons--bluesky simple-icons-sm"></i>bluesky</a> <br>{% endif %}
+      {% if friend.instagram %}<a href={{friend.instagram}} target="_blank"><i class="simple-icons--instagram simple-icons-sm"></i>instagram</a><br>{% endif %}
+      {% if friend.twitch %}<a href={{friend.twitch}} target="_blank"><i class="simple-icons--twitch simple-icons-sm"></i>twitch</a><br>{% endif %}
+      {% if friend.youtube %}<a href={{friend.youtube}} target="_blank"><i class="simple-icons--youtube simple-icons-sm"></i>youtube</a> <br>{% endif %}
+      {% for i in (1..friend.newlines) %}
+        <br>
+      {% endfor %}
+    </div>
+  </div>
+  <br>
+  <div style="padding-left: 10px;">
+    <i>{{ friend.blurb }}</i>
+  </div>
+  <br>
+  <hr class="post-hr" />
+  {% endfor %}
+</ul>

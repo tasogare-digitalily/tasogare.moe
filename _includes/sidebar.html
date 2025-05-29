@@ -5,20 +5,21 @@
             <div>
               games:
               <ul>
-                <li>
-                  Clair Obscur: Expedition 33
-                </li>
-                <li>
-                  Touhou Mystia's Izakaya
-                </li>
+                 {% for item in site.data.current-games %}
+                  <li>
+                    <i>{{ item.name }}</i>
+                  </li>
+                 {% endfor %}
               </ul>
             </div>
              <div>
               projects:
               <ul>
-                <li>
-                  website making
-                </li>
+                {% for item in site.data.current-projects %}
+                  <li>
+                    {{ item.name }}
+                  </li>
+                 {% endfor %}
               </ul>
             </div>
         </div>
@@ -50,7 +51,25 @@
             <li>List</li>
           </ul>
         </div> -->
-        
+        <hr />
+
+
+        <div class="sidebar-section">
+          <div class="sidebar-title">latest updates</div>
+            <div>
+              <ul>
+                {% assign updateList = site.data.latest-updates | slice: 0,5 %}
+                {% for item in updateList %}
+                    <li>
+                      {{ item.date }} - {{ item.name }}
+                    </li>
+                {% endfor %}
+             </ul>
+            </div>
+        </div>
+
+        <hr />
+
         <div class="sidebar-section">
           <div class="sidebar-title">link buttons</div>
           <marquee scrollamount="2">

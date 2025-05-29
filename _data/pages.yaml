@@ -24,5 +24,7 @@
 #       link: /page-d
 #     - name: page E
 #       link: /page-e
+- name: friends
+  link: /friends
 - name: about
   link: /about
