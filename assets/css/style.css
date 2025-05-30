@@ -130,6 +130,11 @@ header {
   background: var(--content-background-color);
 }
 
+.header-content a {
+  color: #e8e3fd;
+  text-decoration: none;
+}
+
 .header-content {
   padding: var(--padding);
 }
@@ -652,7 +657,7 @@ main h6 {
 /* -------------------------------------------------------- */
 
 /* CSS Code for devices < 800px */
-@media (max-width: 800px) {
+@media (max-width: 875px) {
   body {
     font-size: 12px;
     background-image: url("/assets/images/stars5.gif");
@@ -664,6 +669,41 @@ main h6 {
     /* Confused by the grid? Check out my tutorial: https://petrapixel.neocities.org/coding/positioning-tutorial#grid */
   }
 
+  .horiz-navbar-selected {
+  background: #6a94a3;
+  border-top: var(--border);
+  border-left: var(--border);
+  border-right: var(--border);
+  border-radius: var(--round-borders) var(--round-borders) 0px 0px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  color: #e8e3fd;
+  position: relative;
+  text-align: center;
+}
+
+.horiz-navbar-unselected {
+  background:  #6a94a38c;
+  border-top: var(--border);
+  border-left: var(--border);
+  border-right: var(--border);
+  border-radius: var(--round-borders) var(--round-borders) 0px 0px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  color: #e8e3fd;
+  position: relative;
+  text-align: center;
+}
 
 
   aside {
