@@ -251,7 +251,7 @@ footer a:focus {
 
 
 
-.footer-hover i:hover {
+.footer-hover i:hover, i:hover {
   background-color: #e8e3fd;
 }
 
@@ -418,6 +418,7 @@ nav ul ul li > a {
 }
 
 .horiz-navbar nav ul li:hover ul,
+.horiz-navbar nav ul li:active ul,
 .horiz-navbar nav ul li:focus-within ul {
   display: block;
 }
