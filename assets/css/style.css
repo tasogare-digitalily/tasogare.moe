@@ -251,7 +251,8 @@ footer a:focus {
 
 
 
-.footer-hover i:hover, i:hover {
+.footer-hover i:hover,
+.footer-hover i:active {
   background-color: #e8e3fd;
 }
 
@@ -388,7 +389,8 @@ nav ul ul li > a {
 
 .horiz-navbar nav ul {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+
 }
 
 .horiz-navbar nav ul li {
@@ -662,17 +664,7 @@ main h6 {
     /* Confused by the grid? Check out my tutorial: https://petrapixel.neocities.org/coding/positioning-tutorial#grid */
   }
 
-  
-.horiz-navbar {
-  grid-area: horiz-navbar;
-  font-size: 1.2em;
-  padding-left: 12px;
-  padding-right: 12px;
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  width: auto;
-}
+
 
   aside {
     border-bottom: 1px solid;
