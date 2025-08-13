@@ -32,6 +32,9 @@
               {% assign song = site.data.songs | last %}
               <iframe style="border-radius:12px" src= {{ song.spotifyUrl }} width="100%" height="80" frameBorder="0" allowfullscreen="" allow="clipboard-write; encrypted-media; picture-in-picture" loading="lazy"></iframe>
             </div>
+            <div>
+              {{ song.description }}
+            </div>
         </div>
        
         <!-- <div class="sidebar-section">
