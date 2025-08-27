@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "anime magic 2025"
-date:   2025-08-26 5:09:47 -0500
+date:   2025-08-26 6:09:47 -0500
 author: digitalily
 categories: blog cosplay
 url: anime-magic-2025
